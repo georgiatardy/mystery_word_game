@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mystery Word Game</title>
+  </head>
+  <body>
+    <header>
+      <h2>Mystery Word Game</h2>
+      <h3>You have {{count}} guesses left</h3>
+    </header>
+    <div class="wrapper">
+      <h3>{{word}}</h3>
+      <form class="" action="/guess" method="post">
+        <input type="text" name="guess" value="" maxlength="1"><button type="submit" name="button">Make A Guess</button>
+      </form>
+      <h3 name="guessedLetters">Letters Guessed: {{guess}}</h3>
+      <h1 class="win">You Win!</h1>
+      <form class="" action="/guess" method="post">
+        <button type="submit" name="button">Play Again?</button>
+      </form>
+    </div>
+  </body>
+</html>
